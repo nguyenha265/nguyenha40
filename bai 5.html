@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = prompt("nhập ngôi sao muốn tìm");
+    let ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    var index = -1;
+    let traVe = nhan(ngoiSao, chomSao);
+
+
+    function nhan(ngoiSao, chomSao) {
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (nhap === ngoiSao[i]) {
+                index = i;
+            }
+        }
+        if (index != -1){
+            alert(chomSao[index]);}
+        else{
+            alert("kết quả không được tìm thấy")}
+    }
+</script>
+</body>
+</html>
